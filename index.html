@@ -11,6 +11,7 @@
       <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
       <style>
       ul {
+        list-style: none;
           display: flex;
           align-items: stretch;
           flex-flow: row wrap;
@@ -21,7 +22,7 @@
       li {
           align-self: flex-end;
           flex: 1;
-          margin-bottom: 2em;
+          margin: 3em 2em;
           text-align: center;
       }
 
@@ -33,6 +34,25 @@
           text-decoration: none;
       }
 
+      li img {
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          width: 25vw;
+      }
+      li a h4{
+          color: #faa719;
+          font-family: sans-serif;
+          font-size: 1.3rem;
+          margin: 0.75rem 0 0.5rem 0;
+          text-decoration: none;
+      }
+      li a p{
+          color: gray;
+          font-family: sans-serif;
+          font-size: 1.0rem;
+          margin-top: 0.25rem;
+          text-decoration: none;
+      }
         .intro{ height: 75vh;}
         a-scene {
           height: 100%;
@@ -46,6 +66,16 @@
           text-align: center;
           color:lightgray;
         }
+        @media all and (max-width: 650px) {
+          li {
+              flex: 1 100%;
+          }
+
+          li img {
+              width: 85%;
+          }
+        }
+
       </style>
     </head>
     <body>
@@ -78,12 +108,13 @@
         <h1> Experiments </h1>
         <ul>
           <li>
-            <a>
-              <!-- <img src=""> -->
-              <h4>Coming Soon</h4>
-              <p></p>
+            <a href="Portfolio/index.html">
+              <img src="Portfolio/thumb.png">
+              <h4>VR Portfolio</h4>
+              <p> Kannan Kumar - Design Portfolio</p>
             </a>
           </li>
+
         </ul>
       </div>
       </body>
