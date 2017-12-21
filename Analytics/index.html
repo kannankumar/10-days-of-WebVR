@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>10 Days of WebVR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <script type="text/javascript" src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+  </head>
+  <body>
+    <!-- <div class="navback"> < </div> -->
+    <div class="scene">
+      <a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
+              <a-assets>
+                <img id="lotd_all" src="assets/img/lotd_all.png">
+                <img id="a_team" src="assets/img/a_team.jpg">
+                <img id="baloon" src="assets/img/balloon.png">
+                <img id="p_icon" src="assets/img/p_icon.png">
+                <img id="property_search" src="assets/img/property_search.png">
+                <img id="tedx2010" src="assets/img/TED_Woman_2010_poster.gif">
+                <img id="tedx2011" src="assets/img/TED_Woman_2011_poster.gif">
+                <img id="tedxchange" src="assets/img/TEDxChange_poster.gif">
+                <img id="twisted_minds" src="assets/img/Unify_twisted_minds_poster.gif">
+                <img id="vouchers" src="assets/img/Vouchers.png">
+              </a-assets>
+
+              <!-- <a-curvedimage src="#lotd_all" height="60" radius="80" theta-length="85" theta-start="5"  rotation="0 120 0" scale="1 1 1" position="0 -5 0"/></a-curvedimage>
+              <a-curvedimage src="#a_team" height="60" radius="80" theta-length="30" theta-start="92" rotation="0 120 0" scale="0.5 0.5 0.5" position="-8.055 -7.225 -3.938" geometry="thetaLength:30;thetaStart:92"></a-curvedimage>
+              <a-curvedimage src="#baloon" height="60" radius="80" theta-length="30" theta-start="92" rotation="0 120 0" scale="0.5 0.5 0.5" position="0 23.538 0" geometry="thetaLength:30;thetaStart:92"></a-curvedimage>
+              <a-curvedimage src="#p_icon" height="60" radius="80" theta-length="20" theta-start="-60" rotation="0 120 0" scale="0.5 0.5 0.5" position="-5 20.538 -7" geometry="thetaLength:30;thetaStart:-30"></a-curvedimage>
+              <a-curvedimage src="#property_search" height="60" radius="80" theta-length="60" theta-start="-70" rotation="0 120 0" scale="0.5 0.5 0.5" position="-5 -10.538 -6" geometry="thetaLength:60;thetaStart:-70"></a-curvedimage>
+              <a-curvedimage src="#twisted_minds" height="60" radius="80" theta-length="40" theta-start="-70" rotation="0 120 0" scale="0.5 0.5 0.5" position="-5  25.538 -5" geometry="thetaLength:40;thetaStart:-70"></a-curvedimage>
+
+              <a-curvedimage src="#tedx2010" height="80" radius="80" theta-length="40" theta-start="125" rotation="0 120 0" scale="0.5 0.5 0.5" position="0 9.538 1" geometry="thetaLength:40;thetaStart:125"></a-curvedimage>
+              <a-curvedimage src="#tedx2011" height="80" radius="80" theta-length="40" theta-start="165" rotation="0 120 0" scale="0.5 0.5 0.5" position="0 9.538 1" geometry="thetaLength:40;thetaStart:165"></a-curvedimage>
+              <a-curvedimage src="#tedxchange" height="80" radius="80" theta-length="40" theta-start="205" rotation="0 120 0" scale="0.5 0.5 0.5" position="0 9.538 1" geometry="thetaLength:40;thetaStart:205"></a-curvedimage> -->
+
+
+              <!-- Basic cylinder. -->
+
+              <!-- Hexagon. -->
+              <a-entity position="-5 -2 -10">
+                <a-cylinder color="cyan" segments-radial="8" position="0 0 0" material="" geometry=""></a-cylinder>
+                <a-cylinder segments-radial="8" position="0 1.1 0" material="color:#ff93ff"></a-cylinder>
+                <a-cylinder segments-radial="8" position="0 2.2 0" material="color:#ffff80"></a-cylinder>
+              </a-entity>
+              <a-entity position="-2 -2 -10">
+                <a-cylinder color="cyan" height="3" segments-radial="8" position="0 1 0" material="" geometry=""></a-cylinder>
+                <a-cylinder segments-radial="8" height="1" position="0 3.1 0" material="color:#ff93ff"></a-cylinder>
+                <a-cylinder segments-radial="8" height="2" position="0 4.7 0" material="color:#ffff80"></a-cylinder>
+              </a-entity>
+              <a-entity position="1 -2 -10">
+                <a-cylinder color="cyan" height="2" segments-radial="8" position="0 0.5 0" material="" geometry=""></a-cylinder>
+                <a-cylinder segments-radial="8" height="3"  position="0 3.1 0" material="color:#ff93ff"></a-cylinder>
+                <a-cylinder segments-radial="8" height="1" position="0 5.2 0" material="color:#ffff80"></a-cylinder>
+              </a-entity>
+              <a-entity position="4 -2 -10">
+                <a-cylinder color="cyan" height="1" segments-radial="8" position="0 0 0" material="" geometry=""></a-cylinder>
+                <a-cylinder segments-radial="8" height="2"  position="0 1.6 0" material="color:#ff93ff"></a-cylinder>
+                <a-cylinder segments-radial="8" height="2" position="0 3.7 0" material="color:#ffff80"></a-cylinder>
+              </a-entity>
+
+              <!-- Pac-man. -->
+              <a-cylinder color="green" radius="2" theta-start="50" theta-length="200" side="double" position="-10 0 0" rotation="0 180 90"></a-cylinder>
+              <a-cylinder color="yellow" radius="2" theta-start="0" theta-length="50" side="double" position="-10 0 -0.5" rotation="0 180 90"></a-cylinder>
+              <a-cylinder color="red" radius="2" theta-start="250" theta-length="110" side="double" position="-10 -0.5 -0.5" rotation="0 180 90"></a-cylinder>
+              <!-- Green pipe. -->
+
+
+
+              <a-entity text-geometry="height:0.15;size:1.25;value:Analytics" width="50" position="-2.847 7.398 -14" material="color:#58aefc;width:500.78" role="heading"></a-entity>
+
+              <a-sky color="lightblue"></a-sky>
+
+              <!-- <a-light type="ambient" color="#445451" position="-1.885 -0.669 -2.648"></a-light> -->
+              <a-light type="point" intensity="2" position="2 4 6.528"></a-light>
+            </a-scene>
+    </div>
+    </body>
+</html>
