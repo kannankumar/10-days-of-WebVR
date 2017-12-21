@@ -9,12 +9,17 @@
     <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
     <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
     <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
+    <style media="screen">
+      .scene{
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <!-- <div class="navback"> < </div> -->
     <div class="scene">
-      <a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="450" height="225"></canvas>
-              <a-assets>
+      <a-scene embedded>
+              <!-- <a-assets>
                 <img id="lotd_all" src="assets/img/lotd_all.png">
                 <img id="a_team" src="assets/img/a_team.jpg">
                 <img id="baloon" src="assets/img/balloon.png">
@@ -25,7 +30,7 @@
                 <img id="tedxchange" src="assets/img/TEDxChange_poster.gif">
                 <img id="twisted_minds" src="assets/img/Unify_twisted_minds_poster.gif">
                 <img id="vouchers" src="assets/img/Vouchers.png">
-              </a-assets>
+              </a-assets> -->
 
               <!-- <a-curvedimage src="#lotd_all" height="60" radius="80" theta-length="85" theta-start="5"  rotation="0 120 0" scale="1 1 1" position="0 -5 0"/></a-curvedimage>
               <a-curvedimage src="#a_team" height="60" radius="80" theta-length="30" theta-start="92" rotation="0 120 0" scale="0.5 0.5 0.5" position="-8.055 -7.225 -3.938" geometry="thetaLength:30;thetaStart:92"></a-curvedimage>
